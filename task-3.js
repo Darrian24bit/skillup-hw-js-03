@@ -58,10 +58,10 @@ arr.sort(function (a, b) {
     return a.index - b.index
 })
 const newArr = arr.map(names => {
-    return names.char.toString()
+    return names.char;
 
 })
 
 
 
-console.log(newArr.toString());
+console.log(newArr.toString().replace(/,/g, ''));
